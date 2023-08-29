@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-public class ex02_calculadora {
+public class ex02_somar {
     public static void main(String[] args) {
         
-        Calculadora c = new Calculadora();
+        Somar c = new Somar();
         try (Scanner sc = new Scanner(System.in)) {
             int n1, n2;
             System.out.println("Número 1: ");
