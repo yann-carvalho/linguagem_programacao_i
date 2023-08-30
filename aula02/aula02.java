@@ -7,7 +7,7 @@ public class aula02 {
             {
                 do {
                     System.out.println(
-                            "Opção 1 para compra de item;\nOpção 2 para solicitar valor produto ou serviço;\nOpção 3 para falar com atendente;\nOpção 0 para retornar ao menu principal.");
+                            "Opção 1 para compra de item\nOpção 2 para solicitar valor produto ou serviço\nOpção 3 para falar com atendente\nOpção 0 para retornar ao menu principal");
                     int i = sc.nextInt();
                     switch (i) {
                         case 1:
