@@ -3,6 +3,7 @@ public class Pessoa {
     private String nome;
     private double peso;
     private double altura;
+    public int idade;
 
     public void setPeso(double peso) {
         this.peso = peso;
@@ -22,6 +23,8 @@ public class Pessoa {
     public double calculo(){
             return  (peso / (altura * altura));
 
+    }
+    public void niver() {
     }
 
 

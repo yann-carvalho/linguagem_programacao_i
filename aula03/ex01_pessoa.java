@@ -11,7 +11,7 @@ public class ex01_pessoa {
 
         p.niver();
         
-        System.out.println("Atual: "+p.idade);
+        System.out.println("Atual: "+ p.idade);
     }
     }
 }
