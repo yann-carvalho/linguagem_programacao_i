@@ -1,6 +1,6 @@
 public class Pessoa {
-    private String nome;
-    private int idade;
+    protected String nome;
+    protected int idade;
 
     public String getNome() {
         return nome;
