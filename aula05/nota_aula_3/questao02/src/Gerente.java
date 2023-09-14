@@ -5,7 +5,7 @@ public class Gerente extends Funcionario {
     public double getBonus() {
         double salario = getSalario();
         double bonussalario = salario * 0.1;
-        bonus = salario += bonussalario;
+        bonus = salario + bonussalario;
         return bonus;
     }
 

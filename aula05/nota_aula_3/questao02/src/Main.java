@@ -5,7 +5,14 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         Funcionario f = new Funcionario();
 
-        System.out.printf("Selecione:\nOpção 1 para Gerente\nOpção 2 para Diretor\n");
+        System.out.println("----------------------------");
+        System.out.println("CADASTRO DE FUNCIONÁRIO");
+        System.out.println("----------------------------");
+
+        System.out.printf("Selecionea opção:");
+        System.out.println("\n[1] Gerente\n[2] Diretor\n");
+        System.out.println("----------------------------");
+
         int opcao = sc.nextInt();
 
         switch (opcao) {
@@ -21,6 +28,7 @@ public class Main {
                 System.out.println("Informe seu salário:");
                 g.setSalario(sc.nextDouble());
 
+                System.out.println("GERENTE CADASTRADO(A) COM SUCESSO!");
                 System.out.println(g.toString());
             break;
 
@@ -36,6 +44,7 @@ public class Main {
                 System.out.println("Informe seu salário:");
                 d.setSalario(sc.nextDouble());
 
+                System.out.println("DIRETOR(A) CADASTRADO(A) COM SUCESSO!");
                 System.out.println(d.toString());
         }
 
