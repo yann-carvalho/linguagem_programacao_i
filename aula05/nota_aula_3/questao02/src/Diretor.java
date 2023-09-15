@@ -11,10 +11,8 @@ public class Diretor extends Funcionario {
 
     @Override
     public String toString() {
-        return "Diretor{" +
-                "acoes=" + acoes +
-                ", nome='" + nome + '\'' +
-                ", salario=" + salario +
-                '}';
+        return "\nDIRETOR(A): " + nome +
+                "\nQTDE AÇÕES: " + acoes +
+                "\nSALÁRIO: " + salario;
     }
 }

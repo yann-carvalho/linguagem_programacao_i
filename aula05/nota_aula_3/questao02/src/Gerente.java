@@ -3,10 +3,7 @@ public class Gerente extends Funcionario {
     private double bonus;
 
     public double getBonus() {
-        double salario = getSalario();
-        double bonussalario = salario * 0.1;
-        bonus = salario + bonussalario;
-        return bonus;
+        return bonus += (getSalario() * 0.1) + salario;
     }
 
     public void setBonus(double bonus) {
@@ -23,11 +20,9 @@ public class Gerente extends Funcionario {
 
     @Override
     public String toString() {
-        return "Gerente{" +
-                "departamento='" + departamento + '\'' +
-                ", nome='" + nome + '\'' +
-                ", salario=" + salario +
-                ", bonus=" + bonus +
-                '}';
+        return "\nGERENTE: " + nome +
+                "\nDEPARTAMENTO: " + departamento +
+                "\nSALÁRIO: " + salario +
+                "\nNOVO SALÁRIO (bônus acrescido): " + getBonus();
     }
 }

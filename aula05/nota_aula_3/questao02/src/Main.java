@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        Scanner sc2 = new Scanner(System.in);
         Funcionario f = new Funcionario();
 
         System.out.println("----------------------------");
@@ -10,7 +11,7 @@ public class Main {
         System.out.println("----------------------------");
 
         System.out.printf("Selecionea opção:");
-        System.out.println("\n[1] Gerente\n[2] Diretor\n");
+        System.out.println("\n[1] Gerente\n[2] Diretor");
         System.out.println("----------------------------");
 
         int opcao = sc.nextInt();
@@ -20,10 +21,10 @@ public class Main {
                 Gerente g = new Gerente();
 
                 System.out.println("Insira seu nome:");
-                g.setNome(sc.next());
+                g.setNome(sc2.next());
 
                 System.out.println("Informe seu departamento:");
-                g.setDepartamento(sc.next());
+                g.setDepartamento(sc2.next());
 
                 System.out.println("Informe seu salário:");
                 g.setSalario(sc.nextDouble());
@@ -36,7 +37,7 @@ public class Main {
                 Diretor d = new Diretor();
 
                 System.out.println("Insira seu nome:");
-                d.setNome(sc.next());
+                d.setNome(sc2.next());
 
                 System.out.println("Informe a quantidade de ações que possui:");
                 d.setAcoes(sc.nextInt());
