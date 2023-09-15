@@ -21,15 +21,16 @@ public class Main {
                 Gerente g = new Gerente();
 
                 System.out.println("Insira seu nome:");
-                g.setNome(sc2.next());
+                g.setNome(sc2.nextLine());
 
                 System.out.println("Informe seu departamento:");
-                g.setDepartamento(sc2.next());
+                g.setDepartamento(sc2.nextLine());
 
                 System.out.println("Informe seu salário:");
                 g.setSalario(sc.nextDouble());
-
+                System.out.println("\n-----------------------------------");
                 System.out.println("GERENTE CADASTRADO(A) COM SUCESSO!");
+                System.out.println("-----------------------------------");
                 System.out.println(g.toString());
             break;
 
@@ -44,8 +45,9 @@ public class Main {
 
                 System.out.println("Informe seu salário:");
                 d.setSalario(sc.nextDouble());
-
+                System.out.println("\n--------------------------------------");
                 System.out.println("DIRETOR(A) CADASTRADO(A) COM SUCESSO!");
+                System.out.println("--------------------------------------");
                 System.out.println(d.toString());
         }
 
