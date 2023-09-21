@@ -15,7 +15,7 @@ public class Produto {
         return peça;
     }
 
-    public Produto (String produto, double preço, String peça){
+    public Produto(String produto, double preço, String peça) {
         this.produto = produto;
         this.preço = preço;
         this.peça = peça;
