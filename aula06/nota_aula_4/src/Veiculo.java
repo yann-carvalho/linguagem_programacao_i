@@ -1,3 +1,5 @@
+import java.text.DecimalFormat;
+
 public class Veiculo {
     protected String marca;
     protected String modelo;
@@ -32,10 +34,14 @@ public class Veiculo {
 
     @Override
     public String toString() {
+
+        DecimalFormat dec = new DecimalFormat("0.00");
+        String precoFormatado = dec.format(preco);
+
         return "-----VEICULO-----\n" +
                 "Marca: " + marca + "\n"+
                 "Modelo: " + modelo + "\n" +
                 "Ano: " + ano + "\n" +
-                "Preço: " + preco;
+                "Preço: " + precoFormatado;
     }
 }
