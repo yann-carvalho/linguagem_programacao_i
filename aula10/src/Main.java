@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        PF p = new Pessoa();
-        PJ p = new Pessoa();
+        Pessoa pf = new PF();
+        Pessoa pj = new PJ();
         CadastroPessoas cp = new CadastroPessoas();
 
         do {
@@ -17,6 +17,7 @@ public class Main {
                     System.out.println("Informe sua idade: ");
                     p.setIdade(s.nextInt());
                     System.out.println("Informe seu CPF: ");
+                    p.setCpf(s.nextInt());
                     break;
                 case 2:
                     System.out.println("Informe a razão social: ");

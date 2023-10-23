@@ -1,5 +1,5 @@
 public class PF extends Pessoa {
-    private int cpf;
+    public int cpf;
 
     public int getCpf() {
         return cpf;
@@ -9,7 +9,8 @@ public class PF extends Pessoa {
         this.cpf = cpf;
     }
 
-    public PF(int cpf) {
+    public PF(int cpf, String nome) {
+        super(nome, cpf);
         this.cpf = cpf;
     }
 

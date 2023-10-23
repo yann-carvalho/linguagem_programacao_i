@@ -1,5 +1,5 @@
 public class PJ extends Pessoa {
-    private int cpnj;
+    public int cpnj;
 
     public int getCpnj() {
         return cpnj;
@@ -9,7 +9,8 @@ public class PJ extends Pessoa {
         this.cpnj = cpnj;
     }
 
-    public PJ(int cpnj) {
+    public PJ(int cpnj, String nome) {
+        super(nome, cpnj);
         this.cpnj = cpnj;
     }
 
