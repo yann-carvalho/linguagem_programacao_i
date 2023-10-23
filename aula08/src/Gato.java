@@ -1,4 +1,4 @@
-public class Gato extends Animal implements Corrida {
+public class Gato extends Animal implements Comportamento {
     public Gato(String nome, int idade, String genero, double peso, String especie, String habitat) {
         super(nome, idade, genero, peso, especie, habitat);
     }
@@ -10,5 +10,4 @@ public class Gato extends Animal implements Corrida {
     public void Correr() {
         System.out.println("Estou correndo!");
     }
-
 }

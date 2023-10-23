@@ -1,4 +1,4 @@
-public class Cachorro extends Animal implements Corrida {
+public class Cachorro extends Animal implements Comportamento {
     public Cachorro(String nome, int idade, String genero, double peso, String especie, String habitat) {
         super(nome, idade, genero, peso, especie, habitat);
     }

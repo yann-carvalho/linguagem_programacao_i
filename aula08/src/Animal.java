@@ -1,4 +1,4 @@
-public abstract class Animal {
+public abstract class Animal implements Comportamento {
     protected String nome;
     protected int idade;
     protected String genero;
@@ -16,7 +16,15 @@ public abstract class Animal {
     }
 
     public void Som() {
+    }
+
+    @Override
+    public void Correr() {
+
+    }
+
+    @Override
+    public void Voar() {
 
     }
 }
-
