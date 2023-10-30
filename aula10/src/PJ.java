@@ -1,22 +1,19 @@
 public class PJ extends Pessoa {
-    public int cpnj;
+    private String cnpj;
 
-    public int getCpnj() {
-        return cpnj;
+    public PJ(String cnpj, String razaoSocial) {
     }
 
-    public void setCpnj(int cpnj) {
-        this.cpnj = cpnj;
+    public String getCnpj() {
+        return cnpj;
     }
 
-    public PJ(int cpnj, String nome) {
-        super(nome, cpnj);
-        this.cpnj = cpnj;
+    public PJ() {
+        super();
     }
 
     @Override
     public String toString() {
-        return "Nome: " + getNome() + "\nIdade: " + getIdade() + "Tipo: Pessoa Jurídica: " + cpnj;
+        return "Nome: " + getNome() + "\nIdade: " + getIdade() + "\nTipo: Pessoa Jurídica\nCNPJ: " + cnpj;
     }
-
 }
